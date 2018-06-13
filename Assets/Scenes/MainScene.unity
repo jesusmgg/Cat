@@ -211,7 +211,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 331214719}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14, y: -21, z: 0}
+  m_LocalPosition: {x: 6, y: -15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -229,15 +229,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destinationTolerance: 0.05
-  randomDestinationVariation: 0
+  randomDestinationVariation: 10
   currentDestination: {x: 0, y: 0}
   currentStartingPosition: {x: 0, y: 0}
   isAtDestination: 0
   isMoving: 0
-  minX: 0
-  maxX: 0
-  minY: 0
-  maxY: 0
+  minX: -350
+  maxX: 350
+  minY: -250
+  maxY: 200
 --- !u!95 &331214725
 Animator:
   serializedVersion: 3
@@ -247,7 +247,7 @@ Animator:
   m_GameObject: {fileID: 331214719}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d995b0db64a359b4cbadd33e157a598d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 28f60d520eeef964380b0bd3c587707a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -335,7 +335,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 158.5
+  orthographic size: 150.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

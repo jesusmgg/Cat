@@ -31,7 +31,10 @@ public class UnitAnimation : MonoBehaviour
     {
         foreach (AnimatorControllerParameter parameter in animator.parameters)
         {
-            animator.SetBool(parameter.name, false);
+            if (parameter.type == AnimatorControllerParameterType.Bool)
+            {
+                animator.SetBool(parameter.name, false);    
+            }
         }
 
         animator.SetBool(animationName, true);
